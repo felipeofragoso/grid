@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+}
+
+.conteiner{
+    background: rgba(255, 0, 0, 0.25);
+    border: 2px solid rgba(255,0,0,0.5);
+    border-radius: 5px;
+    /* width: 500px;
+    height: 500px; */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 300px);
+    justify-items:center;
+    align-items: center;
+    grid-template-areas:  
+    "c1 c2"
+    "c3 c4"
+    "c5 c6";
+    
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    
+    
+}
+
+.amarelo{
+    background: yellow;
+    grid-area: c5;
+}
+
+.azul{
+    background:blue;
+    grid-area: c2;
+    display: flex;
+    
+}
+
+.laranja{
+    background: orange;
+    grid-area: c1;
+    
+}
+
+.verde{
+    background: green;
+    grid-area: c6;
+
+}
